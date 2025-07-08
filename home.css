@@ -1,0 +1,590 @@
+:root{
+    --primaryColor: #ff274b;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    color: rgb(255, 255, 255);
+     
+}
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+h1 {
+    font-size: 4.65rem ;
+    margin: 1.7rem 0;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    margin-bottom: 3.5rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    height: 100vh;   
+    display: flex;
+    flex-direction: column;
+;
+}
+span{
+    color: var(--primaryColor);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.first-button{
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 90px;
+    position: relative;
+        
+    float: left;
+    width: 100px;
+    text-decoration: none;
+    margin: 1px;
+}
+
+
+
+
+.button{
+    background-color: #ffffff;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 15px;
+    margin-left: 50px;       
+}    
+.nav{
+    background-size: cover;      /* Makes the background image cover the whole page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    
+    
+    
+}
+
+.btn{
+    
+    transform: scale(1.2);
+    color: red;
+    padding-left: 50px;    
+}
+
+.btn img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    margin-left: 290px;
+}
+.container-texts{
+    position: relative;
+    right: 20px;
+    
+}
+
+
+
+.Social-Media {
+    margin-top: 3.5rem;
+    border: 2px solid rgb(255, 0, 0); /* Thickness, style, and color */
+    padding: 10px;            /* Space inside the border */
+    width: fit-content;       /* Shrink to fit content */
+    padding-left: 37px;
+    position: relative;
+    left: 54%;
+
+} 
+.Social-Media{
+    position: relative;
+    
+}
+.Social-Media img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 1s;
+    display: inline-block;
+}
+.Social-Media img:hover {
+    transform: scale(1.2);
+}
+
+p span{
+    cursor: pointer;
+}
+
+.btn2{
+    background-color: black;
+    height: 110px;
+    width: 160px;
+}
+
+.btn3{
+    background-color: red;
+    border-radius: 50px;
+    height: 80px;
+    width: 90px;
+}
+
+button a {
+    text-decoration: none;
+}
+.text{
+    border: 2px solid rgb(255, 0, 0); /* Thickness, style, and color */
+    border-radius: 30px;
+    padding: 10px;            /* Space inside the border */
+    width: fit-content;       /* Shrink to fit content */
+}
+.button1 img {
+    margin-right: 2rem;
+    
+    transition: 1s;
+}
+.button1 img:hover {
+    transform: scale(1.2);
+}
+
+.welcome{
+    margin-right:90px;
+    margin-top: 0%;
+    transition: 1s;
+}
+.welcome {
+    border-radius: 5px;
+    
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+
+.contact-us img{
+    transition: 1s;
+}    
+.contact-us img:hover{
+    transform: scale(1.2);
+}    
+
+#liveDate{
+    border-radius: 20px;
+    border: 2px solid rgb(255, 0, 0); /* Thickness, style, and color */
+    padding: 10px;            /* Space inside the border */
+    width: fit-content;       /* Shrink to fit content */
+    position: relative;
+}
+
+#NWNI {
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    position: relative;
+    right: 160px;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:rgb(238, 218, 0); left:200px; top:0px;}
+    50%  {background-color:rgb(241, 5, 202); left:200px; top:200px;}
+    75%  {background-color:rgb(217, 65, 0); left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+  /* Tooltip container */
+#tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  #tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(255, 0, 0);
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  #tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.download-app{
+    border-radius: 30px;
+    position: relative;
+    right: 10px;
+
+}
+
+.app img {
+    margin-right: 2rem;
+    
+    transition: 0.5s;
+}
+.app img:hover {
+    transform: scale(1.2);
+}
+
+.NWNI-app{
+    
+    position: relative;
+    
+}
+#apple-app{
+    position: relative;
+    left: 80px;
+}
+
+.login{
+    border-radius: 60px;
+    position: relative;
+    bottom: 8px;
+    left: 30px;
+}
+
+.download-nwni{
+    position: relative;
+    left: 50px;
+}
+
+/*Tablet*/
+@media screen and (max-width:800px) {
+    .nav{width: 100%;}
+    .first-button{width: 10%;}
+    .first-button img{
+        width: 100%;
+    }
+    .button{width: 80%;}
+    .button img{margin: 0px;
+    padding: 0;
+    position: relative;
+    right: 80px;
+}
+}
+
+
+.navbar-brand2 img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
+#close{
+    position: relative;
+    right: 20px;
+}
+#click{
+    background-color: red;
+    text-decoration: none;
+}
+
+@media screen and (max-width:450px) {
+    #exampleModal{
+        width: 40px;
+    }
+    .navbar-brand2{
+        position: relative;
+        right: 150px;
+        display: none;
+    }
+    .container-texts{
+        position: relative;
+        right: 180px;
+    }
+    #NWNI{
+        width: 0px;
+    }
+    .navbar-brand{
+        width: 100%;
+    }
+    .navbar-toggler{
+        position: relative;
+        left:68%;
+        bottom: 45px;
+    }
+    .button1{
+        position: relative;
+        left: 50px;
+    }
+    .text{
+        position: relative;
+        left: 50px;
+    }
+    .btn2{
+        display: none;
+        position: relative;
+        left: 50px;
+    }
+    .Social-Media a{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #exampleModal{
+        width: 40px;
+    }
+    .navbar-brand2{
+        position: relative;
+        right: 280px;
+    }
+    .container-texts{
+        position: relative;
+        right: 280px;
+    }
+    #NWNI{
+        width: 0px;
+    }
+    #btn-log{
+        display: none;
+    }
+}
+
+
+
+
+#select{
+    position: relative;
+    
+}
+
+.Download-app{
+    border: solid 2px red;
+}
+
+#app-store{
+    padding-left: 5px;
+    margin-right: 90px;
+    position: relative;
+    left: 50px;
+    bottom: 27px;
+}
+#play-store{
+    padding-left: 5px;
+    margin-right: 90px;
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+#microsoft-store{
+    padding-left: 5px;
+    margin-right: 40px;
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+#btn9{
+    position: relative;
+    right: 42%;
+}
+
+.new{
+    border: solid 3px red;
+    background-color: #f7bcf7;
+    border-radius: 20px;
+    margin-left: 33%;
+    margin-right:33% ;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    right: 20px;
+}
+
+.learn{
+    border: solid 3px red;
+    border-radius: 110px;
+}
+
+#visit{
+    position: relative;
+    right: 46.5%;
+}
+#login{
+    text-decoration: none;
+    position: relative;
+    right: 51.5%;
+}
+#card6{
+    position: relative;
+    left: 10%;
+}
+
+.hello{
+    background-color: #000000;
+}
+
+#myImg {
+    position: relative;
+    top: 130px;
+}
+
+.last{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-bottom: 50px;
+padding-top: 20px;
+}
+
+.newnew{
+    background: #00bf8f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
